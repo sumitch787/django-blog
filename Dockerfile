@@ -1,7 +1,6 @@
 FROM python:3.10-alpine3.15
 COPY . /app
 WORKDIR /app
-RUN rm Dockerfile Jenkinsfile
 ENV DJANGO_SUPERUSER_PASSWORD=admin \
     DJANGO_SUPERUSER_USERNAME=admin \
     DJANGO_SUPERUSER_EMAIL=admin@localhost.com
